@@ -11,7 +11,7 @@
 
 ## 用法:系统更新之前双击脚本,给予管理员权限即可.
 
-## Usage:Double click the .bat file before updating,permit administrator permission
+## Usage:Double click the .bat file before updating,and then permit administrator permission
 
 Checking or waiting 表示目标文件还未出现 | There is no target file now.
 
