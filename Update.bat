@@ -19,12 +19,15 @@ if '%errorlevel%' NEQ '0' (
     CD /D "%~dp0" 
  
 :begin
+    ping -n 1 www.baidu.com
     echo Checking or waiting...
     if exist C:\$WINDOWS.~BT\Sources\appraiserres.dll (goto start) else (goto begin)
 
 :start
+    ping -n 3 www.baidu.com
     echo please let me be able to install update! > appraiserres.dll
     copy /y appraiserres.dll C:\$WINDOWS.~BT\Sources
     del appraiserres.dll
     attrib +r C:\$WINDOWS.~BT\Sources\appraiserres.dll
     echo You can update now!
+    pause
